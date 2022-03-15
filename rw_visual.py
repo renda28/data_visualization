@@ -9,11 +9,11 @@ while True:
     plt.figure(figsize=(10, 6))
 
     # Make a random walk and plot the points.
-    rw = RandomWalk()
+    rw = RandomWalk(50000)
     rw.fill_walk()
-    point_numbers = list(range(5000))
+    point_numbers = list(range(50000))
     plt.scatter(rw.x_values, rw.y_values, c=point_numbers,
-                cmap=plt.cm.Blues, edgecolor='none', s=15)
+                cmap=plt.cm.Blues, edgecolor='none', s=1)
 
     # Emphasize the first and last points.
     plt.scatter(0, 0, c='green', edgecolors='none', s=100)
