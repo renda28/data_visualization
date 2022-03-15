@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 # change figure dimensions
 plt.figure(figsize=(10, 5))
 
-
 x_values = list(range(1, 1001))
 y_values = [x ** 2 for x in x_values]
 plt.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues,
@@ -24,3 +23,6 @@ plt.axis([0, 1100, 0, 1100000])
 plt.subplot().ticklabel_format(style='plain')
 
 plt.show()
+
+# To save plot to a file replace plt.show()
+# plt.savefig('squares_plot.png', bbox_inches='tight')
